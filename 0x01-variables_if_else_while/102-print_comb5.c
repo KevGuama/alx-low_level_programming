@@ -43,7 +43,6 @@ while (h < 58)
 	}
 	h++;
 }
-putchar();
+putchar('\n');
 return (0);
 }
-
