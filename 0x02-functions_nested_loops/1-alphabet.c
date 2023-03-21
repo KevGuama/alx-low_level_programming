@@ -1,20 +1,15 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - Prints Holberton as a message.
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
+*/
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
-	{
-		_putchar(str[count]);
-	}
+void print_alphabet(void)
+{
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ++ch)
+		_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
