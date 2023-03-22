@@ -1,5 +1,17 @@
 #ifndef _main_h_
 #define _main_h_
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
+/**
+ * _putchar - writes the character c to std
+ * @c: parameter to compare
+ * Return: 1 or 0
+ */
+int _putchar(char c);
+/**
+ * print_alphabet - function to print alphabet
+ *
+ */
 
 int _putchar(char);
 void print_alphabet(void);
