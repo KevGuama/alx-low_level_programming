@@ -6,14 +6,6 @@
  * @accept: 2nd string.
  * Return: a pointer to the byte in s that matches one of the
  */
-#include "main.h"
-
-/**
- * _strpbrk - look up a string for each set of bytes.
- * @s: 1st string.
- * @accept: 2nd string.
- * Return: a pointer to the byte in s that matches one of the
- */
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
