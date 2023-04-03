@@ -3,8 +3,8 @@
 /**
  * _strstr - looks and finds the 1st occurrence of the substring.
  * needle in the string haystack.
- * @haystack: entire string.
- * @needle: substring.
+ * haystack: entire string.
+ * needle: substring.
  * Return: pointer to the beginning of located substring or
  * NULL if the substring is not found.
 */
@@ -25,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (!*pneedle)
 			return (bhaystack);
-
+		haystack = bhaystack + 1;
 	}
 	return (0);
 }
