@@ -10,19 +10,22 @@
  * Return: Always 0 (Success)
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int m;
+int x, y;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else
-	{
-		m = (atoi(argv[1]) * atoi(argv[2]));
-		printf("%d\n", m);
-	}
-	return (0);
+
+if (argc < 3)
+{
+printf("Error\n");
+return (1);
+}
+
+
+x = atoi(argv[1]);
+y = atoi(argv[2]);
+printf("%d\n", x * y);
+
+
+return (0);
 }
