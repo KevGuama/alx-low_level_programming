@@ -1,24 +1,13 @@
 #include "main.h"
 
 /**
- * _puts - print a string
- *
- * @str: string pointer
- *
- * Return: nothing
-*/
-
+ * _puts - prints a string
+ * @str: The string
+ */
 void _puts(char *str)
 {
-	int i;
+	while (*str)
+		_putchar(*str++);/*counts each allocated character memory*/
 
-	for (i = 0; str[i] >= 0; i++)
-	{
-		if (str[i] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[i]);
-	}
+	_putchar('\n');
 }
