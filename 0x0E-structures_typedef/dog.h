@@ -1,5 +1,3 @@
-=> dog.h
-
 #ifndef _DOG_H_
 #define _DOG_H_
 /**
